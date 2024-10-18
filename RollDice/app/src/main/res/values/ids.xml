@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="emailButton" type="id">emailbutton</item>
+    <item name="skipText" type="id">skiptext</item>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black">
+
+    <!-- Top Heading -->
+
+    <!-- Paragraph -->
+
+    <TextView
+        android:id="@+id/tips_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:FontStyle="bold"
+        android:text="Get to know Tips"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/white"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/tips_paragraph"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:text="Now there's two ways to planyour trip--
+use AI or search on your town. Either way, you've
+got more than 8 million spots to discover, with over one billion
+reviews and opinions to guide you."
+        android:textColor="@android:color/white"
+        android:layout_below="@id/tips_heading"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Circular Image and Text Section -->
+    <LinearLayout
+        android:id="@+id/location_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tips_paragraph"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/location"
+            android:background="@drawable/circle_shape" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Get personalized recs with AI"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_shape" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Save hotels, resturents, and more"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/map"
+                android:background="@drawable/circle_shape" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="See your saves on your customer map"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Repeat the above LinearLayout for more items -->
+        <!-- Example: Second Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/people"
+                android:background="@drawable/circle_shape" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Share and collab with your travel buds"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Create a Trip Button -->
+
+    <!-- Build a Trip with AI Button -->
+    <Button
+        android:id="@+id/create_trip_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/location_container"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_button_white"
+        android:drawableStart="@drawable/"
+        android:text="Create a Trip"
+        android:textColor="@android:color/black"
+        android:textSize="21dp" />
+
+    <Button
+        android:id="@+id/build_trip_button"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="50dp"
+        android:textSize="19dp"
+        android:background="@drawable/rounded_button"
+        android:text="Build a Trip with AI"
+        android:textColor="@android:color/white"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/create_trip_button" />
+
+    <!-- Bottom Navigation Bar -->
+
+
+</RelativeLayout>
