@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TripAdvisor</string>
+    <string name="roll">Roll</string>
+    <string name="allow_location">Allow Location</string>
+    <string name="description_text">This is the description text</string>
+    <string name="heading_tips">Get to know Tips</string>
+    <string name="paragraph_tips">Now there is two ways to plan and JGoodies. use this app please.</string>
+    <string name="create_trip">Create a Trip</string>
+    <string name="build_trip_ai">Build a Trip with AI</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="trips">Trips</string>
+    <string name="reviews">Reviews</string>
+    <string name="account">Account</string>
+</resources>
